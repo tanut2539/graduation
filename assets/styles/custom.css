@@ -7,6 +7,9 @@ body {
     color: #101820;
     font-family: "DB-Adman-X", "Helvetica Neue", "Helvetica", "Arial, sans-serif";
     background-color: #F8F8F8;
+    background-image: url('../images/bg-pattern.png');
+    background-position: center;
+    background-size: 100%;
     font-size: 1.5rem;
     line-height: 1.2;
     font-weight: 400;
