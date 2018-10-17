@@ -1,56 +1,65 @@
-/*!
- * Stream v1.0 (https://htmlstream.com)
- * Copyright Htmlstream
- * Licensed under MIT
- */
+ScrollReveal().reveal('#intro', {
+  delay: 400,
+  useDelay: 'onload',
+  reset: true,
+});
 
-(function($) {
-  'use strict';
+ScrollReveal().reveal('#about', {
+  delay: 900,
+  useDelay: 'onload',
+  reset: true,
+});
 
-  // Activate Tooltips & Popovers
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip();
-    $('[data-toggle="popover"]').popover();
+ScrollReveal().reveal('.timeline-1', {
+  origin : 'left',
+  delay: 1100,
+  distance : '120px',
+  easing   : 'ease-in-out',
+  useDelay: 'onload',
+  reset: true,
+});
 
-    // Dismiss Popovers on next click
-    $('.popover-dismiss').popover({
-      trigger: 'focus'
-    })
-  });
+ScrollReveal().reveal('.timeline-2', {
+  origin : 'right',
+  delay: 1200,
+  distance : '120px',
+  easing   : 'ease-in-out',
+  useDelay: 'onload',
+  reset: true,
+});
 
-  // Bootstrap Fixed Header
-  $(function() {
-    // Check to see if there is a bakcground class on loading
-    if ($('.js-navbar-scroll').offset().top > 150) {
-      $('.js-navbar-scroll').addClass('navbar-bg-onscroll');
-    }
+ScrollReveal().reveal('.timeline-3', {
+  origin : 'left',
+  delay: 1300,
+  distance : '120px',
+  easing   : 'ease-in-out',
+  useDelay: 'onload',
+  reset: true,
+});
 
-    // Check to add a background class on scrolling
-    $(window).on('scroll', function() {
-      var navbarOffset = $('.js-navbar-scroll').offset().top > 150;
-      if(navbarOffset) {
-        $('.js-navbar-scroll').addClass('navbar-bg-onscroll');
-      }
-      else {
-        $('.js-navbar-scroll').removeClass('navbar-bg-onscroll');
-        $('.js-navbar-scroll').addClass('navbar-bg-onscroll--fade');
-      }
-    });
-  });
+ScrollReveal().reveal('.timeline-4', {
+  origin : 'right',
+  delay: 1400,
+  distance : '120px',
+  easing   : 'ease-in-out',
+  useDelay: 'onload',
+  reset: true,
+});
 
-  // Scroll to (Section)
-  $(function() {
-    $('a[href*=#js-scroll-to-]:not([href=#js-scroll-to-])').on('click', function() {
-      if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top - 10
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-}(jQuery));
+ScrollReveal().reveal('.timeline-5', {
+  origin : 'left',
+  delay: 1500,
+  distance : '120px',
+  easing   : 'ease-in-out',
+  useDelay: 'onload',
+  reset: true,
+});
+
+ScrollReveal().reveal('.timeline-6', {
+  origin : 'right',
+  delay: 1600,
+  distance : '120px',
+  easing   : 'ease-in-out',
+  useDelay: 'onload',
+  reset: true,
+});
